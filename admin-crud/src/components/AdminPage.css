@@ -1,0 +1,165 @@
+/* CSS for the AdminPage component */
+
+*{
+  background-color: rgb(249, 242, 242);
+}
+.add-product-pages {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+  }
+  
+  .add-product-containers {
+    background-color: #c9c7c7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; /* Add margin to separate from product list */
+    margin-left:70px;
+}
+  
+  .product-lists {
+    width: 80%; /* Adjust the width */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start; /* Align products to the top */
+  }
+  
+  .product-items {
+    background-color: #c9c7c7;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex: calc(25% - 10px);
+    padding: 20px; /* Add padding to the product boxes */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative; /* Position relative for button placement */
+  }
+  
+  .product-details-1 {
+    text-align: left; /* Align text to the left */
+  }
+  
+  .product-cards {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+  
+  .product-images img {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+    margin-right: 20px;
+  }
+  
+  .product-buttons-2 {
+    display: flex;
+    justify-content: space-between; /* Align buttons to the right */
+    margin-top: auto;
+    margin-left: auto;
+  }
+  
+  
+  /* Add media query for responsiveness */
+  @media (max-width: 768px) {
+    .product-lists {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-items {
+      width: 100%;
+      margin-bottom: 20px;
+      flex: none; /* Reset flex property for mobile view */
+    }
+  }
+  
+  .ProductListName {
+    padding-left: 80px;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    margin-left: 20%;
+   
+  }
+  .product-searches{
+    padding-top: 115px;
+    margin-left: 50px
+
+  }
+  /* CSS for the AddProduct component */
+.add-product-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    overflow-y: auto; /* Enable vertical scrolling for the form */
+  }
+  
+  .add-product-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for the form */
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; /* Align elements in a column */
+    gap: 20px; /* Add line gap between elements */
+  }
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add line gap between inputs */
+    
+    margin-bottom: 60px;
+  }
+  
+  /* Style the "Description" input to align with others */
+ 
+  
+  /* Style the form fields, buttons, etc. */
+  .add-product-form input,
+.add-product-form textarea,
+.add-product-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Increase the margin to add line gap */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; /* Center text within input fields */
+}
+  
+  .add-product-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .add-product-form button:hover {
+    background-color: #0056b3;
+  }
+  
